@@ -55,7 +55,7 @@ void lcd_busy(void)
 }
 void lcd_disp(char *p)
 {
-	while(*p!='/0')
+	while(*p!='\0')
 	{
 		lcd_data(*p);
 		*p++;
